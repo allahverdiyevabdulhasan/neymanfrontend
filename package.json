@@ -30,6 +30,7 @@
     "react-router-dom": "^6.14.2",
     "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.8",
+    "supports-color": "^9.4.0",
     "swiper": "^10.1.0"
   },
   "devDependencies": {
