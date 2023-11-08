@@ -1,0 +1,234 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header links start */
+.projectHeaderLink {
+  background-color: #fafafc;
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.projectTitle {
+  text-align: center;
+}
+
+.projectTitle {
+  text-align: center;
+}
+
+.projectTitle h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* width: fit-content; */
+  gap: 0.5rem;
+}
+
+.projectLinks a {
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+}
+
+.projectLinks .projectLink {
+  color: #737b9a;
+}
+
+.projectLinks .angleIcon {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  color: #737b9a;
+}
+
+.projectTitle span {
+  border-bottom: 2px solid #f78da7;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+
+/* header links end */
+/* HEADER START */
+.projectHeader {
+  padding: 4rem 0 0 0;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projectHeader .projectTitle {
+  padding: 0.9375rem 0rem 0rem 0rem;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projectHeader .description {
+  color: #737b73;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER END */
+/* PROJECT CARDS START */
+.project-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.875rem;
+  padding: 3rem 0;
+}
+
+.project-cards-container__card {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  width: 28%;
+  height: 33rem;
+  position: relative;
+  text-align: center;
+}
+
+.project-cards-container__card:hover::before {
+  opacity: 1;
+}
+
+.project-cards-container__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 7, 84, 0.5)), to(black));
+  background: linear-gradient(to bottom, rgba(4, 7, 84, 0.5), black);
+  z-index: 2;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.project-cards-container__card:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.project-cards-container__card:hover .project-cards-container__info {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.project-cards-container__info {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 1;
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.project-cards-container__heading {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.project-cards-container__description {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.project-cards-container__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* PROJECT CARDS END */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+  .project-cards-container__card {
+    height: 37rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .project-cards-container__card {
+    width: 33rem;
+    height: 39.25rem;
+  }
+  .project-cards-container__description {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .project-cards-container__heading {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Project.css.map */

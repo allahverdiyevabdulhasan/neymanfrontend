@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+* {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+/* price HeaderLink start */
+
+.priceHeader {
+  background-color: #fafafc;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.priceTitle {
+  text-align: center;
+}
+
+.priceTitle h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+.priceLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content; */
+  gap: 0.5rem;
+}
+
+.priceLinks a {
+  font-size: 1.3rem;
+  color: #0000ff;
+  font-weight: 500;
+}
+.priceLinks .priceLink {
+  color: #737b9a;
+}
+
+.priceLinks .angleIcon {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  color: #737b9a;
+}
+.priceTitle span {
+  border-bottom: 2px solid #f78da7;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+
+/* price HeaderLink */
+
+/* header start */
+.header {
+  padding: 4rem 0 ;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.header h2 {
+  padding: 0.9375rem 0rem 0rem 0rem;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.header p {
+  color: #737b73;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* header end */
+
+/* cards container start */
+
+.cardsContainer {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  &__pricePeriodContainer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: fit-content;
+    padding: 2rem;
+    gap: 0.5rem;
+  }
+  &__period,
+  &__exchangeRate {
+    color: #737b9a;
+    font-weight: 600;
+  }
+
+  &__cardContainer {
+    width: 100%;
+  }
+  &__card {
+    /* background-color: gray; */
+    transition: 0.5s all;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 420px;
+    
+    background-color: #fff;
+   
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+  }
+  &__card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
+  }
+  &__cardHeader {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: white;
+  }
+  .secondHeader {
+    background-color: #f78da7;
+  }
+  .thirdHeader {
+    background-color: orange;
+  }
+
+  &__price {
+    position: relative;
+    top: 0.5rem;
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* &::before {
+      content: "$";
+      left: -1.1em;
+      bottom: 2.5em;
+      position: absolute;
+      font-size: 1rem;
+      color: #737b9a;
+    } */
+    /* &::after {
+      content: "/ mo";
+      font-size: 1rem;
+      color: #737b9a;
+      position: absolute;
+      right: -2.8rem;
+      bottom: 2.5rem;
+    } */
+  }
+  &__devider {
+    width: 100%;
+    height: 1px;
+    background-color: #dddfe8;
+  }
+  &__cardContentContainer {
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  &__itemsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  &__items {
+    font-weight: 500;
+    width: 100%;
+    color: #737b9a;
+    font-size: 1.2rem;
+  }
+  &__tick-icon {
+    font-size: 2rem;
+    color: limegreen;
+    font-weight: 100;
+  }
+  &__notAveilble-icon{
+    position: relative;
+    right: 0.2rem;
+    font-size: 2rem;
+    color: red;
+  }
+  &__link {
+    position: relative;
+    display: inline-block;
+
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2rem 0 0.5rem 0;
+    cursor: pointer;
+    &--orange-underline {
+      position: relative;
+      display: inline-block;
+      color: orange;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 2rem 0 0.5rem 0;
+      cursor: pointer;
+    }
+    &--pink-underline {
+      position: relative;
+      display: inline-block;
+      color: #ff6289;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 2rem 0 0.5rem 0;
+      cursor: pointer;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: blue;
+      transition: width 0.6s;
+    }
+  }
+  &__link:hover::before {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .cardsContainer {
+    width: 100%;
+
+    &__card {
+      transition: 0.5s all;
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+      /* width: 30rem; */
+      width: 300px;
+
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .cardsContainer {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    &__card {
+      transition: 0.5s all;
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+      /* width: 30rem; */
+
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+/* cards container end */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .cardsContainer {
+    /* width: 100%; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    &__card {
+      width: 250px;
+
+      /* width: 30rem; */
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .cardsContainer {
+    /* width: 100%; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    &__card {
+      width: 200px;
+
+      /* width: 30rem; */
+    }
+  }
+}

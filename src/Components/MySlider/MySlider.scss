@@ -1,0 +1,64 @@
+
+.container {
+  max-width: 1320px !important;
+  width: 100%;
+
+
+}
+.slider1 {
+  width: 100%;
+  height: 40vw;
+ 
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+  &__content {
+    position: absolute;
+   padding-right: 35rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+
+    h1 {
+      /* padding: 17px; */
+      font-size: 3.5rem;
+      padding-bottom: 2rem;
+      /* width: 40ch; */
+    }
+
+    p {
+      color: #737b9a;
+    font-size: 1.125rem;
+    /* padding: 0.625rem; */
+    padding-bottom: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 2;
+
+    }
+
+    button {
+      
+      position: relative;
+    display: inline-flex;
+    font-size: 0.9rem;
+    padding: 0.9375rem 1.875rem;
+    background-color: #0000ff;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0.3rem;
+    }
+  }
+}
+
+.slider1__content {
+  top: 10%;
+  
+}
+
+ 

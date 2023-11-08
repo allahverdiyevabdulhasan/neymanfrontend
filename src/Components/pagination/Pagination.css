@@ -1,0 +1,63 @@
+.pagination-container {
+  color: white;
+  margin: 5rem 0;
+}
+
+.pagination-container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  gap: 10px;
+  /* color: white; */
+}
+
+.pagination-container .pagination .page-item {
+  color: white;
+  position: relative;
+  /* gap:10px  ; */
+  width: 4rem;
+  height: 4rem;
+  /* display: flex;
+justify-content: center;
+align-items: center; */
+  color: white;
+}
+
+.pagination-container .pagination .page-item .page-link {
+  background-color: white;
+  position: absolute;
+  -webkit-box-shadow: 0 0 10px 0 #e5e2e2;
+          box-shadow: 0 0 10px 0 #e5e2e2;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  font-weight: 700;
+  /* background-color: red; */
+}
+
+.pagination-container .pagination .page-item .page-link:hover {
+  background-color: blue;
+  color: white;
+}
+/*# sourceMappingURL=Pagination.css.map */

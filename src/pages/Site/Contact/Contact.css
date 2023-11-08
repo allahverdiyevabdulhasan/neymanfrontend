@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contactCardContainer {
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.contactCardContainer .card {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  width: calc(33% - 20px);
+  /* height: ; */
+  padding: 2rem 0;
+  border-radius: 8px;
+  /* height: 400px; */
+  /* background-color: #f6f6f6; */
+  -webkit-box-shadow: 0 0 20px 0 rgba(161, 155, 155, 0.2);
+          box-shadow: 0 0 20px 0 rgba(161, 155, 155, 0.2);
+}
+
+.contactCardContainer .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.contactCardContainer .card .icon-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-color: #f6f6f6;
+}
+
+.contactCardContainer .card .icon-container .contactIcon {
+  position: absolute;
+  color: blue;
+  width: 35%;
+  height: 35%;
+}
+
+.contactCardContainer .card .title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.contactCardContainer .card .descriptionContainer .contact-type {
+  font-size: 1.5rem;
+  color: #8f8f8f;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.faqSection-2 .faqTitleBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 5rem 0 0 0;
+}
+
+.faqSection-2 .faqTitleBottom .about-description {
+  color: blue;
+  font-size: 1.5rem;
+}
+
+.faqSection-2 .faqTitleBottom h2 {
+  font-size: 3rem;
+}
+
+.faqSection-2 .faqTitleBottom .faqDescription {
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.faqSection-2 .section-2-content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.faqSection-2 .section-2-content .left {
+  width: 37%;
+  position: relative;
+}
+
+.faqSection-2 .section-2-content .left img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.faqSection-2 .section-2-content .right {
+  width: 63%;
+}
+
+.faqSection-2 .section-2-content .right form {
+  /* background-color: rgb(72, 6, 6); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.faqSection-2 .section-2-content .right form .inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.faqSection-2 .section-2-content .right form textarea {
+  font-size: 1.5rem;
+  height: 15rem;
+  width: 100%;
+  resize: none;
+  outline: none;
+  padding: 1.5rem;
+  opacity: 0.4;
+}
+
+.faqSection-2 .section-2-content .right form textarea::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form textarea:-ms-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form textarea::-ms-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form textarea::placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form .inputs input {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  outline: none;
+  opacity: 0.4;
+}
+
+.faqSection-2 .section-2-content .right form .inputs input::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form .inputs input:-ms-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form .inputs input::-ms-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faqSection-2 .section-2-content .right form .inputs input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* BUTTON ANIMATION START */
+button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  width: 13rem;
+  height: 4rem;
+  cursor: pointer;
+  padding: 0.9375rem 1.875rem;
+  background-color: #3535c5;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+  font-weight: 900;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  background: orange;
+  /* border-radius: 20%; */
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+
+button:hover::before {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+/* BUTTON ANIMATION START */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .contactCardContainer .card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,442 @@
+.container {
+  max-width: 1320px;
+  width: 100%;
+}
+.footer {
+  position: relative;
+
+  background-color: #212529;
+
+  display: flex;
+  flex-direction: column;
+  &__subscribers{
+    padding: 3rem 0;
+display: flex;
+gap: 1rem;
+justify-content: space-between;
+border-bottom: 1px solid #4e5e6a;
+}
+&__input-button-container{
+  display: flex;
+  gap: 1rem;
+}
+&__subscribe-content{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2{
+    font-size: 1.2rem;
+  }
+  p{
+    letter-spacing:0.6px;
+  }
+}
+&__subscribe-input{
+  height: 3.5rem;
+  width: 25rem;
+  padding-left: 1rem;
+}
+&__subscribe-button{
+  background-color: rgb(53, 53, 197);
+  height: 3.5rem;
+
+}
+
+
+  &__top {
+    margin-bottom: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 5rem;
+  }
+  &__contactInfoCol {
+    position: relative;
+    padding: 0.625rem 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
+
+    h2 {
+      text-align: start;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 0.8rem;
+    }
+  }
+  &__headerandBorderBottom {
+    position: relative;
+    width: 100%;
+  }
+  &__contactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+    a {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 900;
+      transition: all 0.2s;
+      &:hover {
+        color: #fa7070;
+      }
+    }
+    &__footerLinks {
+      position: absolute;
+      width: 100%;
+      color: #e4e4e4;
+      display: flex;
+      justify-content: space-between;
+      background-color: yellow;
+    }
+  }
+
+  &__iconContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+  }
+
+  &__devider {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #4e5e6a;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 5rem;
+      height: 1px;
+      background-color: white;
+    }
+  }
+  &__phoneContainer {
+    display: flex;
+    gap: 1rem;
+  }
+  &__phoneIcon {
+    font-size: 3.125rem;
+    color: #fa7070;
+  }
+  &__phoneInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    p {
+      font-size: 0.9375rem;
+      width: 100%;
+      color: #e4e4e4;
+    }
+    a {
+      width: 100%;
+    }
+  }
+  &__socialMediaContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+     /* height: 1.875rem; */
+    width: 100%;
+padding-right: 6rem;
+    gap: 3px;
+  }
+  
+  &__socialIcon {
+    font-size: 2rem;
+  }
+  &__linkdiv {
+    position: relative;
+    width: 5px;
+    background-color: pink;
+  }
+
+  &__quickLinksContainer {
+    
+    padding: 0.625rem 0;
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__bottomUnderscore {
+    position: relative;
+    width: 100%;
+    h2 {
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__quickLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__right {
+    position: relative;
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__footerLinks {
+    transition: all 0.2s;
+    color: #e4e4e4;
+    font-size: 1.4rem;
+    width: 100%;
+    &:hover {
+      color: #fa7070;
+    }
+  }
+  &__galleryContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem 0;
+    width: 25%;
+    gap: 3rem;
+  }
+  &__galleries {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+  }
+  &__firstLine {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  &__galleriesImagesCont {
+    position: relative;
+    width: 33.3%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__secondLine {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__bottom {
+    position: relative;
+    width: 100%;
+  }
+  &__bottomDevider {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4e5e6a;
+    margin-bottom: 3.125rem;
+  }
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875rem 0;
+  }
+  &__copyrightLeft {
+    width: 50%;
+    color: white;
+    font-size: 1.5rem;
+  }
+  &__copyrightRight {
+    text-align: right;
+    width: 50%;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .footer{
+    &__top{
+      margin-bottom: 5rem;
+    }
+    &__contactContainer{
+      a{
+        font-size: 1.4rem;
+      }
+    
+
+    }
+     &__galleries{
+      height: 15rem;
+ 
+    }
+    &__left{
+      width: 60%;
+    
+    }
+    &__right{
+      width: 40%;
+     
+    }
+     &__socialMediaContainer{
+     width: 100%;
+     
+      padding-right: 3rem;
+   }
+   
+  }
+
+
+}
+
+
+
+@media(max-width:768px){
+ 
+  .container{
+   max-width: 540px !important;
+  }
+  
+.footer{
+  &__subscribers{
+flex-direction: column;
+}
+  &__top{
+    flex-direction: column;
+    gap: 6rem;
+  }
+  &__headerandBorderBottom{
+   margin-bottom: 2rem;
+   }
+ &__headerandBorderBottom{
+  h2{
+   
+    font-size: 2.5rem;
+  }
+ }
+ &__bottomUnderscore{
+margin-bottom: 2rem;
+ }
+ &__bottomUnderscore{
+ h2{
+  font-size: 2.5rem;
+ }
+ }
+ &__phoneInfo{
+  p{
+    font-size: 1.5rem;
+  }
+  a{
+    font-size: 2rem;
+  }
+ 
+
+ }
+
+ 
+ &__contactInfoCol{
+width: 100%;
+
+  }
+  &__quickLinksContainer{
+    width: 100%;
+ 
+    a{
+      font-size: 2rem;
+    }
+    }
+    &__left{
+      width: 30%;
+    
+    }
+    &__right{
+      width: 70%;
+  
+    }
+    &__galleries{
+      height: 50rem;
+ 
+    }
+    &__galleryContainer{
+      width: 100%;
+    }
+   
+    &__bottom{
+      width: 100%;
+    }
+    
+  &__copyrightLeft{
+    width: fit-content;
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+  }
+  &__copyrightRight{
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  &__socialMediaContainer{
+    padding-right: 72rem;
+ align-content: flex-start;
+   }
+  &__socialMediaLinks{
+    display: inline-block;
+    width: 3.125rem;
+  }
+
+}
+
+
+}
+
+  @media(max-width:576px){
+    .container{
+     max-width: 90% !important;
+    }
+    .footer{
+
+      &__left{
+        width: 25%;
+     
+      }
+      &__right{
+        width: 75%;
+      
+      }
+      &__socialMediaContainer{
+        padding-right: 70rem;
+      }
+    }
+    
+   
+    }
+    
